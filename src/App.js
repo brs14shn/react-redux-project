@@ -6,6 +6,7 @@ import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductListing from './pages/ProductListing';
 import ProductDetail from './pages/ProductDetail';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -18,9 +19,10 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path="" element={<ProductListing/>}/>
-        <Route path="" element={<ProductDetail/>}/>
+        <Route path="/" element={<ProductListing/>}/>
+        <Route path="/product/:productId" element={<ProductDetail/>}/>
         {/* <Route path="*" element={<NotFound />} /> */} 
+        <Route>404 Not Found!</Route>
       </Routes>
       </BrowserRouter>
       </Provider>
