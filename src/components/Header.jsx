@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="p-3 border border-3">
+    <div className="headershadow p-3 bg-body rounded">
       <div className="container  ">
         <h2>FakeShop</h2>
       </div>
