@@ -9,8 +9,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <h1>lsdfvf</h1>
-
+        <h1>Redux</h1>
       </Provider>
    
       
