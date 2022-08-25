@@ -1,7 +1,7 @@
 
 import './App.css';
-import { Provider } from 'react-redux';
-import {getStore} from "./redux/store";
+// import { Provider } from 'react-redux';
+// import {getStore} from "./redux/store";
 import Header from './components/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductListing from './pages/ProductListing';
@@ -11,11 +11,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const store = getStore();
+  // const store = getStore();
 
   return (
     <div className="App">
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
       <BrowserRouter>
       <Header/>
       <Routes>
@@ -25,7 +25,7 @@ function App() {
         <Route>404 Not Found!</Route>
       </Routes>
       </BrowserRouter>
-      </Provider>
+      {/* </Provider> */}
    
       
     </div>
